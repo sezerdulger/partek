@@ -120,7 +120,8 @@ public class SendMailTLS {
 		
 		final String username = "teknikservis@partekbilisim.com";
 		//final String password = "T.2016*";
-		final String password = "Papo7170";
+		//final String password = "Papo7170";
+		final String password = "Soha2528";
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		//props.put("mail.smtp.starttls.enable", "false");
