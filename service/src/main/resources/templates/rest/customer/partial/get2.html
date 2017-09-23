@@ -1,0 +1,52 @@
+
+<div xmlns:th="http://www.thymeleaf.org" >
+	<form th:object="${customer}" th:action="@{/customer.json}" class="customer">
+		
+<div class="form-group row">
+	<label for="id" class="col-sm-2 form-control-label" th:text="#{customer.id}"></label>
+	<div class="col-sm-4">
+		<span type="text" class="form-control" id="id" th:text="*{id}" contenteditable="false"></span>
+	</div>
+</div>
+
+<div class="form-group row">
+	<label for="title" class="col-sm-2 form-control-label" th:text="#{customer.title}"></label>
+	<div class="col-sm-4">
+		<span type="text" class="form-control" id="title" th:text="*{title}" contenteditable="true"></span>
+	</div>
+</div>
+
+<div class="form-group row">
+	<label for="address" class="col-sm-2 form-control-label" th:text="#{customer.address}"></label>
+	<div class="col-sm-4">
+		<span type="text" class="form-control" id="address" th:text="*{address}" contenteditable="true"></span>
+	</div>
+</div>
+
+<div class="form-group row">
+	<label for="tel" class="col-sm-2 form-control-label" th:text="#{customer.tel}"></label>
+	<div class="col-sm-4">
+		<span type="text" class="form-control" id="tel" th:text="*{tel}" contenteditable="true"></span>
+	</div>
+</div>
+
+		<div class="form-group row">
+			<label for="id" class="col-sm-2 form-control-label" th:text="#{customer.emails}"></label>
+			<div class="col-sm-4">
+				<select  id="emails" th:field="*{emails}" class="form-control restselect" multiple="multiple">
+					<option th:each="item : ${customer.emails}" th:value="${item}" th:text="${item}" selected="selected"></option>
+				</select>
+			</div>
+		</div>
+
+		
+		<div class="form-group row">
+			<div class="col-sm-offset-2 col-sm-1">
+				<button type="button" class="btn btn-secondary restcancel" th:text="#{str.cancel}"></button>
+			</div>
+			<div class="col-sm-3">
+				<button type="submit" class="btn btn-primary" th:text="#{str.save}"></button>
+			</div>
+		</div>
+	</form>
+</div>

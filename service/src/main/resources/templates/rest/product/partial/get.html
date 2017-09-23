@@ -1,0 +1,111 @@
+
+<div ng-controller="ProductGetController" layout="column" ng-cloak="" class="md-inline-form" ng-init="init()">
+	<md-content layout-padding="">
+	    <div>
+	    	<form name="product">
+		        
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{product.id}"  ng-if="true" ></label>
+			            <input  ng-model="product.id" disabled="disabled"  ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{product.name}"  ng-if="true" ></label>
+			            <input  ng-model="product.name"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+ 				<div layout-gt-sm="row"  ng-if="true" >
+		        	<md-input-container class="md-block md-input-has-value" flex-gt-sm=""  ng-if="true" >
+		        		 <label th:text="#{product.customer}"  ng-if="true"></label>
+					     <md-content class="md-padding" layout="column"  ng-if="true">
+						    <md-chips readonly="readonly"   >
+						        <md-chip >
+						        	<input style="display: none;" value="{{product.customer.id}}" ng-if="true" />
+						        	<a  ng-if="true">{{product.customer.title}}</a>
+						        	
+						        </md-chip>
+						        
+						    </md-chips>
+						 </md-content>
+				    </md-input-container>
+				    
+				    <md-input-container class="md-block relation" flex-gt-sm=""  ng-if="true" >
+				    <div layout="row" ng-if="true">
+					    	<i ng-if="true"  class="material-icons" ng-click="deletecustomer($event, product)">delete</i>
+					    	<i ng-if="true"  class="material-icons" ng-click="showcustomerList($event, product)" data-template="/customer/select">edit</i>
+				    	</div>
+				    </md-input-container>
+				</div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{product.createdBy}"  ng-if="false" ></label>
+			            <input  ng-model="product.createdBy"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{product.owner}"  ng-if="false" ></label>
+			            <input  ng-model="product.owner"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{product.updatedBy}"  ng-if="false" ></label>
+			            <input  ng-model="product.updatedBy"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false" >
+					<div layout="column" ng-if="false">
+						<div flex="" ng-if="false">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="false" >
+								<label th:text="#{product.createdAt}" ng-if="false"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="false">
+							<md-datepicker ng-if="false" ng-model="product.createdAt"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false" >
+					<div layout="column" ng-if="false">
+						<div flex="" ng-if="false">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="false" >
+								<label th:text="#{product.updatedAt}" ng-if="false"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="false">
+							<md-datepicker ng-if="false" ng-model="product.updatedAt"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+		  <div layout-gt-sm="row"  ng-if="false" >
+		  <md-checkbox md-no-ink="" ng-if="false" ng-model="product.deleted" class="md-primary" th:text="#{product.deleted}">
+            
+          </md-checkbox>
+          </div>
+
+				
+		        <div layout-gt-sm="row">
+					<div class="col-sm-offset-8 col-sm-1">
+						<button type="button" ng-click="save();" class="btn btn-primary" th:text="#{str.save}"></button>
+					</div>
+					<div class="col-sm-1">
+						<span th:replace="fragments/product :: getactions">
+					  
+						</span>
+					</div>
+				</div>
+	      </form>
+	    </div>
+  </md-content>
+</div>

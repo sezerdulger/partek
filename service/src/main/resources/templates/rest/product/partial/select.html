@@ -1,0 +1,283 @@
+
+<div xmlns:th="http://www.thymeleaf.org" ng-controller="ProductSelectController" ng-init="init()">
+<h1 th:text="#{product_plural}"></h1>
+	
+	
+	<div layout="row">
+		
+			<div flex=""  ng-show="fields.id.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{product.search_id}"     class="form-control" for="id" ng-model="filter.id" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.name.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{product.search_name}"     class="form-control" for="name" ng-model="filter.name" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.customer.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{product.search_customer}"     class="form-control" for="customer" ng-model="filter.customer" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.createdBy.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{product.search_createdBy}"     class="form-control" for="createdBy" ng-model="filter.createdBy" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.owner.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{product.search_owner}"     class="form-control" for="owner" ng-model="filter.owner" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.updatedBy.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{product.search_updatedBy}"     class="form-control" for="updatedBy" ng-model="filter.updatedBy" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""   ng-show="fields.createdAt.visibility" class="border_right">
+				<div layout="row">
+					<div layout="column">
+						<div layout="flex">
+							<md-datepicker ng-model="filter.createdAt.min"   ></md-datepicker>
+						</div>
+						<div layout="flex">
+							<md-datepicker ng-model="filter.createdAt.max"   ></md-datepicker>
+						</div>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="index();">search</i>
+					</div>
+				</div>
+			</div>
+
+			<div flex=""   ng-show="fields.updatedAt.visibility" class="border_right">
+				<div layout="row">
+					<div layout="column">
+						<div layout="flex">
+							<md-datepicker ng-model="filter.updatedAt.min"   ></md-datepicker>
+						</div>
+						<div layout="flex">
+							<md-datepicker ng-model="filter.updatedAt.max"   ></md-datepicker>
+						</div>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="index();">search</i>
+					</div>
+				</div>
+			</div>
+
+			<div flex=""  ng-show="fields.deleted.visibility" class="border_right" >
+				<div layout="row">
+					<div layout="column">
+				      	<md-input-container  class="md-block" >
+							 <md-checkbox md-no-ink="" ng-change="index();" ng-model="filter.deleted" class="md-primary" th:text="#{Product.deleted}">
+	            
+	          				</md-checkbox>
+						</md-input-container>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="filter.deleted=null;index();">delete</i>
+					</div>
+				</div>
+			</div>
+
+		<div flex="" >
+			
+		</div>
+	</div>
+	
+	 
+	 
+	 <div layout="row">
+		
+				<div flex=""  ng-show="fields.id.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="id" th:text="#{product.id}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.name.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="name" th:text="#{product.name}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.customer.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="customer" th:text="#{product.customer}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.createdBy.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="createdBy" th:text="#{product.createdBy}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.owner.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="owner" th:text="#{product.owner}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.updatedBy.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="updatedBy" th:text="#{product.updatedBy}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.createdAt.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="createdAt" th:text="#{product.createdAt}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.updatedAt.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="updatedAt" th:text="#{product.updatedAt}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.deleted.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="deleted" th:text="#{product.deleted}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+		<div flex="">
+			
+			<md-menu>
+				<md-button aria-label="fields menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
+		        	<i class="material-icons">assignment
+		        		<md-tooltip md-direction="bottom">
+					    	<span th:text="#{str.fields}"></span>
+					    </md-tooltip>
+		        	</i>
+		      	</md-button>
+		      	<md-menu-content width="4">
+			      	
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox product.id" ng-model="fields.id.visibility" th:text="#{product.id}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox product.name" ng-model="fields.name.visibility" th:text="#{product.name}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox product.customer" ng-model="fields.customer.visibility" th:text="#{product.customer}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		      	</md-menu-content>
+			</md-menu>
+		</div>
+	</div>
+	 
+	<md-divider></md-divider>
+	
+	<md-divider></md-divider>
+	<br />
+	<md-list >
+		<md-list-item ng-repeat="product in productlist" class="restrow" >
+			
+		<div flex=""  ng-show="fields.id.visibility" >
+			<span  >{{product.id}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.name.visibility" >
+			<span  >{{product.name}}</span>
+		</div>
+
+				<div flex="" ng-show="fields.customer.visibility">
+					<a data-href="/customer.json/{{product.customer.id}}" 
+					class="rest product.customer indexselect"
+					id="customer"
+					ng-click="checkDeletedStatus($event, product.customer.deleted);"
+					>
+					{{product.customer.title}}
+					</a>
+				</div>
+
+		<div flex=""  ng-show="fields.createdBy.visibility" >
+			<span  >{{product.createdBy}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.owner.visibility" >
+			<span  >{{product.owner}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.updatedBy.visibility" >
+			<span  >{{product.updatedBy}}</span>
+		</div>
+
+					<div flex=""  ng-show="fields.createdAt.visibility">
+						<!-- <md-datepicker ng-model="product.createdAt" disabled="" ></md-datepicker>-->
+						<i  class="material-icons">today</i>
+						<span ng-model="product.createdAt" disabled="" >
+							{{product.createdAt | date:'dd-MM-yyyy'}}
+						</span>
+						
+					</div>
+
+					<div flex=""  ng-show="fields.updatedAt.visibility">
+						<!-- <md-datepicker ng-model="product.updatedAt" disabled="" ></md-datepicker>-->
+						<i  class="material-icons">today</i>
+						<span ng-model="product.updatedAt" disabled="" >
+							{{product.updatedAt | date:'dd-MM-yyyy'}}
+						</span>
+						
+					</div>
+
+		<div flex=""  ng-show="fields.deleted.visibility" >
+			<md-checkbox  layout="row" ng-model="product.deleted" th:text="#{product.deleted}" disabled="disabled">
+			</md-checkbox>
+		</div>
+
+			<div flex="">
+				<button type="button" class="btn btn-primary" ng-click="selectRelation(product)" th:text="#{str.select}"></button>
+
+			</div>
+		</md-list-item>
+	</md-list>
+	<div layout="row">
+		<uib-pagination total-items="totalItems" ng-model="currentPage" class="pagination-sm" max-size="5"
+		  	previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" 
+		  	boundary-link-numbers="true" rotate="false">
+		</uib-pagination>
+	</div>
+	<span id="deleteConfirmation" th:text="#{str.deleteConfirmation}" ng-show="false"></span>
+	<span id="deleteConfirmationTitle" th:text="#{str.deleteConfirmationTitle}" ng-show="false"></span>
+	<span id="yes" th:text="#{str.yes}" ng-show="false"></span>
+	<span id="no" th:text="#{str.no}" ng-show="false"></span>
+</div>

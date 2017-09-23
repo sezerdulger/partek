@@ -1,0 +1,64 @@
+
+<div xmlns:th="http://www.thymeleaf.org" ng-controller="CustomerIndexController" >
+<h1 th:text="#{str.customers}"></h1>
+		<table class="resttable display tablesorter" cellspacing="0" width="100%" >
+			<thead>
+				<tr>
+					
+				<th>
+					<label class="form-control-label" for="id" th:text="#{customer.id}">
+					
+					</label>
+				</th>
+
+
+				<th>
+					<label class="form-control-label" for="id" th:text="#{customer.title}"  >
+					
+					</label>
+				</th>
+					<th class="labelsave sorter-false filter-false">
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="customer in customerlist">
+					
+				<td>
+					<md-input-container class="md-block">
+						<input class="customer.id" id="id" contenteditable="false" ng-model="customer.id" />
+					</md-input-container>
+				</td>
+
+				<td>
+				<!-- 
+					<span class="form-control customer.comment" id="comment" contenteditable="true" ng-bind="customer.comment">
+					
+					</span>
+					 -->
+					 <md-input-container class="md-block">
+					 	<input class="customer.title"  ng-model="customer.title" />
+					 </md-input-container>
+				</td>
+
+					<td>
+						<form class="form-inline customer" role="form" data-id="{{customer.id}}">
+							<button type="submit" ng-click="save(customer)" class="btn btn-primary" th:text="#{str.save}" ></button>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				<td colspan="3">
+				<uib-pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" 
+		  previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+		  
+		  </uib-pagination>
+				</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		
+</div>

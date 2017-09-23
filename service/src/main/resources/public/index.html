@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="restApp" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Partek</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/base.css}"/>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/dropdown.css}"/>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" th:src="@{/js/ajax.js}"></script>
+<script type="text/javascript" th:src="@{/js/base.js}"></script>
+<script type="text/javascript" th:src="@{/js/form.js}"></script>
+<script type="text/javascript" th:src="@{/js/rest.js}"></script>
+
+<script type="text/javascript" th:src="@{/js/rest/customer.js}"></script>
+<script type="text/javascript" th:src="@{/js/angular/menu.js}"></script>
+</head>
+
+<body>
+	<div ng-controller="DemoBasicCtrl as ctrl" ng-cloak="">
+		<md-toolbar class="md-menu-toolbar">
+		<div layout="row" layout-align="start center">
+			<md-toolbar-filler layout="" layout-align="center center">
+			<md-icon md-svg-icon="call:chat"></md-icon> </md-toolbar-filler>
+			<div style="width: 80%;">
+
+				<h1 class="md-toolbar-tools">Partek Service Page</h1>
+
+				<md-menu-bar> <md-menu>
+				<button ng-click="$mdOpenMenu()">
+					<span th:text="#{str.file}"></span>
+				</button>
+				<md-menu-content> <md-menu-item> <md-button
+					ng-click="ctrl.sampleAction('/mymodel.json', $event)">
+				Send Service Form </md-button> </md-menu-item> <md-menu-divider></md-menu-divider> <md-menu-item>
+				<md-menu> <md-button ng-click="$mdOpenMenu()">New</md-button>
+				<md-menu-content> <md-menu-item>
+				<md-button ng-click="ctrl.sampleAction('New Document', $event)">Document</md-button></md-menu-item>
+				<md-menu-item>
+				<md-button ng-click="ctrl.sampleAction('New Spreadsheet', $event)">Spreadsheet</md-button></md-menu-item>
+				<md-menu-item>
+				<md-button ng-click="ctrl.sampleAction('New Presentation', $event)">Presentation</md-button></md-menu-item>
+				<md-menu-item>
+				<md-button ng-click="ctrl.sampleAction('New Form', $event)">Form</md-button></md-menu-item>
+				<md-menu-item>
+				<md-button ng-click="ctrl.sampleAction('New Drawing', $event)">Drawing</md-button></md-menu-item>
+				</md-menu-content> </md-menu> </md-menu-item> </md-menu-content> </md-menu> <md-menu>
+				<button ng-click="$mdOpenMenu()">
+					<span th:text="#{str.about}"></span>
+				</button>
+				<md-menu-content> <md-menu-item> <md-button
+					ng-click="ctrl.sampleAction('share', $event)"> About </md-button> </md-menu-item>
+				</md-menu-content> </md-menu> </md-menu-bar>
+			</div>
+			<div ng-controller="LanguageController" layout="column"
+				style="width: 10%; text-align: right;">
+				<div>
+					<h1 class="md-title">Language</h1>
+					<md-input-container style="margin-right: 10px;">
+					<md-select ng-model="selectedLang"
+						ng-change="changeLanguage($event);"> <md-option
+						ng-repeat="lang in langs" value="{{lang}}">{{lang}}</md-option> </md-select> </md-input-container>
+				</div>
+			</div>
+		</div>
+
+		</md-toolbar>
+		<div ng-view="" class="view-frame page-container">
+			<div class="page">Test fadf</div>
+		</div>
+
+	</div>
+</body>
+<div id="loader_1" hidden="">
+	<img th:src="@{/images/loader/loader_1.gif}" />
+</div>
+<div id="loader_3" hidden="">
+	<img th:src="@{/images/loader/loader_3.gif}" />
+</div>
+
+
+</html>

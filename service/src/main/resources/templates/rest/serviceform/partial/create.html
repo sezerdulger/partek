@@ -1,0 +1,323 @@
+
+<div ng-controller="ServiceFormGetController" layout="column" ng-cloak="" class="md-inline-form" ng-init="init()">
+	<md-content layout-padding="">
+	    <div>
+	    	<form name="serviceform">
+		        
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.id}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.id" disabled="disabled"  ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+ 				<div layout-gt-sm="row"  ng-if="true" >
+		        	<md-input-container class="md-block md-input-has-value" flex-gt-sm=""  ng-if="true" >
+		        		 <label th:text="#{serviceform.customer}"  ng-if="true"></label>
+					     <md-content class="md-padding" layout="column"  ng-if="true">
+						    <md-chips readonly="readonly"   >
+						        <md-chip >
+						        	<input style="display: none;" value="{{serviceform.customer.id}}" ng-if="true" />
+						        	<a  ng-if="true">{{serviceform.customer.title}}</a>
+						        	
+						        </md-chip>
+						        
+						    </md-chips>
+						 </md-content>
+				    </md-input-container>
+				    
+				    <md-input-container class="md-block relation" flex-gt-sm=""  ng-if="true" >
+				    <div layout="row" ng-if="true">
+					    	<i ng-if="true"  class="material-icons" ng-click="deletecustomer($event, serviceform)">delete</i>
+					    	<i ng-if="true"  class="material-icons" ng-click="showcustomerList($event, serviceform)" data-template="/customer/select">edit</i>
+				    	</div>
+				    </md-input-container>
+				</div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.customerTitle}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.customerTitle"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.department}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.department"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.address}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.address"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.tel}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.tel"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+	
+			<div layout-gt-sm="row" >
+		        	<md-input-container class="md-block" flex-gt-xs="" >
+			            <label th:text="#{serviceform.emails}" ng-if="true"></label>
+			           	<!--<select ng-model="customer.emails" class="myrestselect2" multiple="multiple" ng-options="email for email in customer.emails">
+			           	</select>-->
+			           	<!--
+			           		<select ng-model="customer.emails" class="myrestselect2" multiple="multiple" >
+			           			 <option ng-repeat="email in customer.emails" value="{{email}}" selected="selected">{{email}}</option>
+			           		</select>-->
+			           		<!--
+			           		<select ng-model="customer.emails" class="myrestselect2" multiple="multiple">
+				           		<option value="test1">test1</option>
+				           		<option value="test2">test2</option>
+				           	</select>-->
+				           	<input  ng-model="serviceform.emails" class="myrestselect2" placeholder="" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.authorizedPerson}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.authorizedPerson"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true" >
+					<div layout="column" ng-if="true">
+						<div flex="" ng-if="true">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="true" >
+								<label th:text="#{serviceform.requestDate}" ng-if="true"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="true">
+							<md-datepicker ng-if="true" ng-model="serviceform.requestDate"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true" >
+					<div layout="column" ng-if="true">
+						<div flex="" ng-if="true">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="true" >
+								<label th:text="#{serviceform.serviceDate}" ng-if="true"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="true">
+							<md-datepicker ng-if="true" ng-model="serviceform.serviceDate"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.serviceType}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.serviceType"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+ 	<div layout-gt-sm="row"  ng-if="true" >
+	 	<md-input-container style="margin-right: 10px;" ng-if="true">
+	        <label th:text="#{serviceform.scope}" ng-if="true"></label>
+	        <md-select ng-model="serviceform.scope" ng-if="true">
+	          
+<md-option value="str.remoteSupport" th:text="#{str.remoteSupport}" selected="selected"></md-option>
+
+<md-option value="str.localSupport" th:text="#{str.localSupport}" ></md-option>
+
+	        </md-select>
+	     </md-input-container>
+     </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.serviceDefinition}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.serviceDefinition"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.usedMaterial}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.usedMaterial"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+		  <div layout-gt-sm="row"  ng-if="true" >
+		  <md-checkbox md-no-ink="" ng-if="true" ng-model="serviceform.contracted" class="md-primary" th:text="#{serviceform.contracted}">
+            
+          </md-checkbox>
+          </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.serviceDescription}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.serviceDescription"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+					<div layout="column" ng-if="true">
+						<div flex="" ng-if="true">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="true" >
+								<label th:text="#{serviceform.startTime}"  ng-if="true" class="myfocused"></label>
+							</md-input-container>
+						</div>
+			            <div flex="" ng-if="true">
+			          	 	<uib-timepicker ng-model="serviceform.startTime" hour-step="hstep" minute-step="mstep" show-meridian="false"></uib-timepicker>
+			           </div>
+			        </div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+					<div layout="column" ng-if="true">
+						<div flex="" ng-if="true">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="true" >
+								<label th:text="#{serviceform.finishTime}"  ng-if="true" class="myfocused"></label>
+							</md-input-container>
+						</div>
+			            <div flex="" ng-if="true">
+			          	 	<uib-timepicker ng-model="serviceform.finishTime" hour-step="hstep" minute-step="mstep" show-meridian="false"></uib-timepicker>
+			           </div>
+			        </div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{serviceform.duration}"  ng-if="true" ></label>
+			            <input  ng-model="serviceform.duration"   ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+ 	<div layout-gt-sm="row"  ng-if="true" >
+	 	<md-input-container style="margin-right: 10px;" ng-if="true">
+	        <label th:text="#{serviceform.pricing}" ng-if="true"></label>
+	        <md-select ng-model="serviceform.pricing" ng-if="true">
+	          
+<md-option value="str.servicePayment" th:text="#{str.servicePayment}" selected="selected"></md-option>
+
+<md-option value="str.manHour" th:text="#{str.manHour}" ></md-option>
+
+	        </md-select>
+	     </md-input-container>
+     </div>
+
+ 				<div layout-gt-sm="row"  ng-if="false" >
+		        	<md-input-container class="md-block md-input-has-value" flex-gt-sm=""  ng-if="false" >
+		        		 <label th:text="#{serviceform.serviceFormPricing}"  ng-if="false"></label>
+					     <md-content class="md-padding" layout="column"  ng-if="false">
+						    <md-chips readonly="readonly"   >
+						        <md-chip >
+						        	<input style="display: none;" value="{{serviceform.serviceFormPricing.id}}" ng-if="false" />
+						        	<a  ng-if="false">{{serviceform.serviceFormPricing.title}}</a>
+						        	
+						        </md-chip>
+						        
+						    </md-chips>
+						 </md-content>
+				    </md-input-container>
+				    
+				    <md-input-container class="md-block relation" flex-gt-sm=""  ng-if="false" >
+				    <div layout="row" ng-if="false">
+					    	<i ng-if="false"  class="material-icons" ng-click="deleteserviceFormPricing($event, serviceform)">delete</i>
+					    	<i ng-if="false"  class="material-icons" ng-click="showserviceFormPricingList($event, serviceform)" data-template="/serviceformpricing/select">edit</i>
+				    	</div>
+				    </md-input-container>
+				</div>
+
+ 				<div layout-gt-sm="row"  ng-if="true" >
+		        	<md-input-container class="md-block md-input-has-value" flex-gt-sm=""  ng-if="true" >
+		        		 <label th:text="#{serviceform.employee}"  ng-if="true"></label>
+					     <md-content class="md-padding" layout="column"  ng-if="true">
+						    <md-chips readonly="readonly"   >
+						        <md-chip >
+						        	<input style="display: none;" value="{{serviceform.employee.id}}" ng-if="true" />
+						        	<a  ng-if="true">{{serviceform.employee.fullname}}</a>
+						        	
+						        </md-chip>
+						        
+						    </md-chips>
+						 </md-content>
+				    </md-input-container>
+				    
+				    <md-input-container class="md-block relation" flex-gt-sm=""  ng-if="true" >
+				    <div layout="row" ng-if="true">
+					    	<i ng-if="true"  class="material-icons" ng-click="deleteemployee($event, serviceform)">delete</i>
+					    	<i ng-if="true"  class="material-icons" ng-click="showemployeeList($event, serviceform)" data-template="/user/select">edit</i>
+				    	</div>
+				    </md-input-container>
+				</div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{serviceform.createdBy}"  ng-if="false" ></label>
+			            <input  ng-model="serviceform.createdBy"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{serviceform.owner}"  ng-if="false" ></label>
+			            <input  ng-model="serviceform.owner"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{serviceform.updatedBy}"  ng-if="false" ></label>
+			            <input  ng-model="serviceform.updatedBy"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false" >
+					<div layout="column" ng-if="false">
+						<div flex="" ng-if="false">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="false" >
+								<label th:text="#{serviceform.createdAt}" ng-if="false"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="false">
+							<md-datepicker ng-if="false" ng-model="serviceform.createdAt"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false" >
+					<div layout="column" ng-if="false">
+						<div flex="" ng-if="false">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="false" >
+								<label th:text="#{serviceform.updatedAt}" ng-if="false"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="false">
+							<md-datepicker ng-if="false" ng-model="serviceform.updatedAt"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+		  <div layout-gt-sm="row"  ng-if="false" >
+		  <md-checkbox md-no-ink="" ng-if="false" ng-model="serviceform.deleted" class="md-primary" th:text="#{serviceform.deleted}">
+            
+          </md-checkbox>
+          </div>
+
+				
+		        <div layout-gt-sm="row">
+					<div class="col-sm-offset-8 col-sm-1">
+						<button type="button" ng-click="save();" class="btn btn-primary" th:text="#{str.save}"></button>
+					</div>
+					<div class="col-sm-1">
+						<span th:replace="fragments/serviceform :: getactions">
+					  
+						</span>
+					</div>
+				</div>
+	      </form>
+	    </div>
+  </md-content>
+</div>

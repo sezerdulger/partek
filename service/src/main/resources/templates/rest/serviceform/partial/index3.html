@@ -1,0 +1,39 @@
+
+<div xmlns:th="http://www.thymeleaf.org" ng-controller="ServiceFormIndexController as x">
+<h1> Service Forms</h1>
+	<div layout="row">
+		<div flex="">
+	       	<md-input-container class="md-block" >
+				<label class="form-control-label" for="id" th:text="#{serviceform.id}">
+				</label>
+			</md-input-container>
+			<md-input-container class="md-block">
+	            <input ng-model="serviceform.id" disabled="disabled" />
+	        </md-input-container>
+		</div>
+		<div flex="">
+	       	<md-input-container class="md-block" >
+				<label class="form-control-label" for="customer" th:text="#{serviceform.customer}">
+				</label>
+			</md-input-container>
+			<md-input-container class="md-block" flex-gt-sm="" >
+		    	<md-content class="md-padding" layout="column">
+					<md-chips readonly="readonly" >
+			        	<md-chip>
+			        		<a>{{serviceform.customer.title}}</a>
+			        	</md-chip>
+			    	</md-chips>
+			   	</md-content>
+		    </md-input-container>
+		</div>
+		<div flex="">
+	       	<md-input-container class="md-block" >
+				<label class="form-control-label" for="comment" th:text="#{serviceform.comment}">
+				</label>
+			</md-input-container>
+			<md-input-container class="md-block">
+	            <input ng-model="serviceform.comment" disabled="disabled" />
+	        </md-input-container>
+		</div>
+	</div>
+</div>

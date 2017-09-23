@@ -1,0 +1,33 @@
+	<span th:fragment="indexactions">
+     	<i class="material-icons" ng-click="sendMail(serviceform)">mail
+			<md-tooltip md-direction="bottom">
+				<span th:text="#{str.sendmail}"></span>
+			</md-tooltip>
+		</i>
+		<i class="material-icons" ng-click="downloadPDF(serviceform)">get_app
+			<md-tooltip md-direction="bottom">
+				<span th:text="#{str.downloadpdf}"></span>
+				
+			</md-tooltip>
+		</i>
+		<a ng-include="pdf"></a>
+    </span>
+    <span th:fragment="getactions">
+     	<button type="button" ng-click="saveAndSend(serviceform);" class="btn btn-primary" th:text="#{str.saveAndSend}"></button>
+    </span>
+    
+    <span th:fragment="indexending">
+     	<span th:text="#{serviceform.totalService}">
+     	
+     	</span>
+     	<br/>
+     	<span th:text="#{serviceform.totalHours}">
+     	
+     	</span>
+     	: {{totalHour}}
+     	<br/>
+     	<span th:text="#{serviceform.totalMinutes}">
+     	
+     	</span> 
+     	: {{totalMinute}}
+    </span>

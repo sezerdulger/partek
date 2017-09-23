@@ -1,0 +1,70 @@
+<div xmlns:th="http://www.thymeleaf.org" class="container-fluid">
+<h1>Service Forms</h1>
+	<table class="resttable display" cellspacing="0" width="100%">
+		<thead>
+			<tr>
+				<th>
+					<label for="id" th:text="#{serviceform.id}" >
+					
+					</label>
+				</th>
+				<th>
+					<label for="customer" th:text="#{serviceform.customer}" >
+					
+					</label>
+				</th>
+				
+				<th>
+					<label for="comment" th:text="#{serviceform.comment}" >
+					
+					</label>
+				</th>
+			</tr>
+		</thead>
+	<tfoot>
+		<tr>
+			<th>
+				<label for="id" th:text="#{serviceform.id}" >
+				
+				</label>
+			</th>
+			<th>
+				<label for="customer" th:text="#{serviceform.customer}" >
+				
+				</label>
+			</th>
+			
+			<th>
+				<label for="comment" th:text="#{serviceform.comment}" >
+				
+				</label>
+			</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr th:each="serviceform : ${serviceformlist}">
+			<form th:action="@{/serviceform.json}" class="form-inline serviceform" role="form">
+				<td>
+						<span class="form-control" id="id" th:text="${serviceform.id}">
+						
+						</span>
+				</td>
+				<td>
+						<a th:href="@{/customer/{id}(id=${serviceform.customer.id})}" 
+						th:text="${serviceform.customer.title}"
+						class="rest"
+						data-newdialog="true"
+						>
+						</a>
+				</td>
+				<td>
+						<input type="text" class="form-control" id="comment" th:value="${serviceform.comment}" />
+				</td>
+				<td>
+						<button type="submit" class="btn btn-primary" th:text="#{str.save}"></button>
+				</td>
+			</form>
+		</tr>
+	</tbody>
+</table>
+</div>

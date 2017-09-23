@@ -1,0 +1,79 @@
+
+<div xmlns:th="http://www.thymeleaf.org" ng-controller="ServiceFormIndexController as x">
+<h1> Service Forms</h1>
+		<table class="resttable display tablesorter" cellspacing="0" width="100%" >
+			<thead>
+				<tr>
+					
+				<th>
+					<label class="form-control-label" for="id" th:text="#{serviceform.id}">
+					
+					</label>
+				</th>
+
+				<th>
+					<label class="form-control-label" for="id" th:text="#{serviceform.customer}"  >
+					
+					</label>
+				</th>
+
+				<th>
+					<label class="form-control-label" for="id" th:text="#{serviceform.comment}"  >
+					
+					</label>
+				</th>
+					<th class="labelsave sorter-false filter-false">
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="serviceform in serviceformlist">
+					
+				<td>
+					<span class="form-control serviceform.id" id="id" contenteditable="false" ng-bind="serviceform.id">
+						
+					</span>
+					 
+				</td>
+
+				<td>
+					<md-button class="md-primary md-raised" flex="100" flex-gt-md="auto"
+					data-url="#/customer/id/{{ serviceform.customer.id }}"
+					ng-click="getCustomer($event)"
+					>
+					
+					{{serviceform.customer.title}}
+					</md-button>
+					
+				</td>
+
+				<td>
+				<!-- 
+					<span class="form-control serviceform.comment" id="comment" contenteditable="true" ng-bind="serviceform.comment">
+					
+					</span>
+					 -->
+					 <input class="form-control serviceform.comment"  ng-model="serviceform.comment" />
+				</td>
+
+					<td>
+						<form class="form-inline serviceform" role="form" data-id="{{serviceform.id}}">
+							<button type="submit" ng-click="x.save(serviceform)" class="btn btn-primary" th:text="#{str.save}" ></button>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				<td colspan="3">
+				<uib-pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" 
+		  previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+		  
+		  </uib-pagination>
+				</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		
+</div>

@@ -1,0 +1,968 @@
+2017-01-12 17:29:24.888+0000 WARN  [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 1628268544 bytes will be used instead. 
+2017-01-12 17:29:24.982+0000 INFO  [o.n.k.i.f.CommunityEditionModule] No locking implementation specified, defaulting to 'community'
+2017-01-12 17:29:25.388+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=C:\Users\software\Desktop\restapp.db
+2017-01-12 17:29:25.435+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.https.enabled=true
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=C:\Users\software\Desktop\restapp.db
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2017-01-12 17:29:25.451+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 4,00 GB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 702,23 MB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 117,52 MB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 4,69 GB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 1,19 GB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 32,75 MB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 61,94 MB
+2017-01-12 17:29:25.466+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 989,88 MB
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: Copy: [Eden Space, Survivor Space]
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen]
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6,94 MB, used=6,89 MB, max=240,00 MB, threshold=0,00 B
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=23,13 MB, used=22,30 MB, max=-1,00 B, threshold=0,00 B
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=3,38 MB, used=3,11 MB, max=1,00 GB, threshold=0,00 B
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Eden Space (Heap memory): committed=17,13 MB, used=3,93 MB, max=273,06 MB, threshold=?
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Survivor Space (Heap memory): committed=2,13 MB, used=2,12 MB, max=34,13 MB, threshold=?
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Tenured Gen (Heap memory): committed=42,69 MB, used=23,41 MB, max=682,69 MB, threshold=0,00 B
+2017-01-12 17:29:25.482+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2017-01-12 17:29:25.498+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows Server 2012 R2; version: 6.3; arch: amd64; cpus: 1
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 2956@CD101
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Istanbul
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.73-b02
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_2.3.3_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\Users\software\AppData\Local\Temp\2\e4jB1EB.tmp_dir1484242104\user;C:\Program Files (x86)\Google\Chrome\Application;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\program files\java\jre1.8.0_73\bin;c:\program files\java\jre1.8.0_73\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/cldrdata.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunec.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\classes
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/jaccess.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\jce.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%202.3.3/.install4j/i4jruntime.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/dnsns.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\rt.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/jfxrt.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunmscapi.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunpkcs11.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/zipfs.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\resources.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunjce_provider.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/localedata.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%202.3.3/bin/neo4j-desktop-3.1.0.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/access-bridge-64.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-desktop-3.1.0.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 2.3.3\.install4j\i4jruntime.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/nashorn.jar
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2017-01-12 17:29:25.529+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\software\AppData\Local\Temp\2\e4jB1EB.tmp_dir1484242104\user
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Google\Chrome\Application
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_73\bin
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_73\bin
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-ce.exe
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_2.3.3_bin_neo4j-ce.exe
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_73\bin
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = TR
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 2.3.3\bin\
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 2.3.3\bin
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1254
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\software
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Istanbul
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1254
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = software
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-ce.exe
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\PROGRA~1\NEO4JC~1.3\bin\neo4j-ce.exe
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = tr
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 2.3.3\
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2017-01-12 17:29:25.545+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2017-01-12 17:29:25.576+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Çekirdek Hata Ayıklama Ağ Bağdaştırıcısı:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface RAS Async Bağdaştırıcısı:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.175.176.12
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:200:5efe:c0af:b00c%net4
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Bağdaştırıcısı:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2002:c0af:b00c:0:0:0:c0af:b00c
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı-QoS Packet Scheduler-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:25.591+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2017-01-12 17:29:26.638+0000 INFO  [o.n.b.v.r.WorkerFactory] Bolt Server extension loaded.
+2017-01-12 17:29:26.638+0000 INFO  [o.n.b.v.r.WorkerFactory] Bolt enabled on localhost:7687.
+2017-01-12 17:29:27.123+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV2_2[v0.A.5] record format from store C:\Users\software\Desktop\restapp.db
+2017-01-12 17:29:27.138+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_0[v0.A.7]' for existing store with format 'RecordFormat:StandardV2_2[v0.A.5]'
+2017-01-12 17:29:27.232+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2017-01-12 17:29:27.232+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2017-01-12 17:29:27.232+0000 INFO  [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2017-01-12 17:29:45.927+0000 WARN  [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 1628268544 bytes will be used instead. 
+2017-01-12 17:29:45.989+0000 INFO  [o.n.k.i.f.CommunityEditionModule] No locking implementation specified, defaulting to 'community'
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=C:\Users\software\Desktop\restapp.db
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.allow_format_migration=true
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.https.enabled=true
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=C:\Users\software\Desktop\restapp.db
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 4,00 GB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 679,94 MB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 130,48 MB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 4,69 GB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 1,18 GB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 17,72 MB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 61,94 MB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 989,88 MB
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: Copy: [Eden Space, Survivor Space]
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen]
+2017-01-12 17:29:46.005+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=9,75 MB, used=9,59 MB, max=240,00 MB, threshold=0,00 B
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=29,88 MB, used=29,07 MB, max=-1,00 B, threshold=0,00 B
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=4,13 MB, used=3,91 MB, max=1,00 GB, threshold=0,00 B
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Eden Space (Heap memory): committed=17,13 MB, used=10,86 MB, max=273,06 MB, threshold=?
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Survivor Space (Heap memory): committed=2,13 MB, used=2,13 MB, max=34,13 MB, threshold=?
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Tenured Gen (Heap memory): committed=42,69 MB, used=31,23 MB, max=682,69 MB, threshold=0,00 B
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows Server 2012 R2; version: 6.3; arch: amd64; cpus: 1
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 2956@CD101
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Istanbul
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.73-b02
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_2.3.3_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\Users\software\AppData\Local\Temp\2\e4jB1EB.tmp_dir1484242104\user;C:\Program Files (x86)\Google\Chrome\Application;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\program files\java\jre1.8.0_73\bin;c:\program files\java\jre1.8.0_73\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/cldrdata.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunec.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\classes
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/jaccess.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\jce.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%202.3.3/.install4j/i4jruntime.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/dnsns.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\rt.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/jfxrt.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunmscapi.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunpkcs11.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/zipfs.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\resources.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/sunjce_provider.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/localedata.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%202.3.3/bin/neo4j-desktop-3.1.0.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/access-bridge-64.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-desktop-3.1.0.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 2.3.3\.install4j\i4jruntime.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_73/lib/ext/nashorn.jar
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\software\AppData\Local\Temp\2\e4jB1EB.tmp_dir1484242104\user
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Google\Chrome\Application
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_73\bin
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_73\bin
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-ce.exe
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_2.3.3_bin_neo4j-ce.exe
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_73\bin
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = TR
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 2.3.3\bin\
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 2.3.3\bin
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1254
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\software
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Istanbul
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1254
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = software
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 2.3.3\bin\neo4j-ce.exe
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\PROGRA~1\NEO4JC~1.3\bin\neo4j-ce.exe
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = tr
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 2.3.3\
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2017-01-12 17:29:46.021+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2017-01-12 17:29:46.083+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Çekirdek Hata Ayıklama Ağ Bağdaştırıcısı:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface RAS Async Bağdaştırıcısı:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.175.176.12
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:200:5efe:c0af:b00c%net4
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Bağdaştırıcısı:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2002:c0af:b00c:0:0:0:c0af:b00c
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı-QoS Packet Scheduler-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hyper-V Ağ Bağdaştırıcısı-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:29:46.099+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2017-01-12 17:29:46.114+0000 INFO  [o.n.b.v.r.WorkerFactory] Bolt Server extension loaded.
+2017-01-12 17:29:46.114+0000 INFO  [o.n.b.v.r.WorkerFactory] Bolt enabled on localhost:7687.
+2017-01-12 17:29:46.146+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV2_2[v0.A.5] record format from store C:\Users\software\Desktop\restapp.db
+2017-01-12 17:29:46.146+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_0[v0.A.7]' for existing store with format 'RecordFormat:StandardV2_2[v0.A.5]'
+2017-01-12 17:29:46.208+0000 INFO  [o.n.k.i.s.p.StoreMigrator] Starting upgrade of database
+2017-01-12 17:29:46.255+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2017-01-12 17:29:46.255+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2017-01-12 17:29:46.255+0000 INFO  [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2017-01-12 17:43:30.632+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2017-01-12 17:43:30.751+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2017-01-12 17:43:30.788+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2017-01-12 17:43:30.788+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2017-01-12 17:43:30.788+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2017-01-12 17:43:30.788+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.type=BOLT
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.tls_level=OPTIONAL
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.shell.enabled=true
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.type=HTTP
+2017-01-12 17:43:30.789+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.security.auth_store.location=data\dbms\auth
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2017-01-12 17:43:30.790+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2017-01-12 17:43:30.791+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2017-01-12 17:43:30.795+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 7.93 GB
+2017-01-12 17:43:30.795+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 3.90 GB
+2017-01-12 17:43:30.796+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 307.50 MB
+2017-01-12 17:43:30.796+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 15.93 GB
+2017-01-12 17:43:30.796+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 11.14 GB
+2017-01-12 17:43:30.796+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2017-01-12 17:43:30.796+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 78.28 MB
+2017-01-12 17:43:30.797+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 123.00 MB
+2017-01-12 17:43:30.797+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 1.76 GB
+2017-01-12 17:43:30.802+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2017-01-12 17:43:30.802+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2017-01-12 17:43:30.803+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.31 MB, used=6.26 MB, max=240.00 MB, threshold=0.00 B
+2017-01-12 17:43:30.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=20.13 MB, used=19.54 MB, max=-1.00 B, threshold=0.00 B
+2017-01-12 17:43:30.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.88 MB, used=2.71 MB, max=1.00 GB, threshold=0.00 B
+2017-01-12 17:43:30.805+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=32.50 MB, used=30.66 MB, max=666.50 MB, threshold=?
+2017-01-12 17:43:30.805+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=5.00 MB, used=4.99 MB, max=5.00 MB, threshold=?
+2017-01-12 17:43:30.806+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=85.50 MB, used=9.07 MB, max=1.32 GB, threshold=0.00 B
+2017-01-12 17:43:30.806+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2017-01-12 17:43:30.806+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 8
+2017-01-12 17:43:30.812+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 3340@chaosknight
+2017-01-12 17:43:30.813+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2017-01-12 17:43:30.813+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Istanbul
+2017-01-12 17:43:30.813+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2017-01-12 17:43:30.813+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2017-01-12 17:43:30.813+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2017-01-12 17:43:30.813+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.102-b14
+2017-01-12 17:43:30.814+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:43:30.815+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;;c:\program files\java\jre1.8.0_102\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2017-01-12 17:43:30.815+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2017-01-12 17:43:30.820+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/cldrdata.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/zipfs.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/jfxrt.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\charsets.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\resources.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jsse.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunec.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jfr.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/.install4j/i4jruntime.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/nashorn.jar
+2017-01-12 17:43:30.821+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jce.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunmscapi.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunpkcs11.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/dnsns.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\classes
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunjce_provider.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/neo4j-desktop-3.0.6.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-desktop-3.0.6.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\rt.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/jaccess.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/access-bridge-64.jar
+2017-01-12 17:43:30.822+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/localedata.jar
+2017-01-12 17:43:30.823+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\.install4j\i4jruntime.jar
+2017-01-12 17:43:30.823+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\sunrsasign.jar
+2017-01-12 17:43:30.823+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2017-01-12 17:43:30.823+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2017-01-12 17:43:30.823+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2017-01-12 17:43:30.824+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2017-01-12 17:43:30.824+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2017-01-12 17:43:30.825+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2017-01-12 17:43:30.825+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static
+2017-01-12 17:43:30.826+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Git\cmd
+2017-01-12 17:43:30.826+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\HashiCorp\Vagrant\bin
+2017-01-12 17:43:30.827+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Neo4j CE 3.0.6\bin
+2017-01-12 17:43:30.827+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_102\bin
+2017-01-12 17:43:30.827+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_102\bin
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = US
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2017-01-12 17:43:30.828+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 3.0.6\bin\
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 3.0.6\bin
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1254
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\chaosleader
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Istanbul
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1254
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = chaosleader
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:43:30.829+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = en
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 3.0.6\
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2017-01-12 17:43:30.830+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2017-01-12 17:43:30.969+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Çekirdek Hata Ayıklama Ağ Bağdaştırıcısı:
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR9285 Kablosuz Ağ Bağdaştırıcısı:
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30):
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.1.61
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c1dc:b2aa:30ca:145c%eth1
+2017-01-12 17:43:30.970+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Aygıtı (RFCOMM Protokolü TDI):
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Aygıtı (Kişisel Alan Ağı):
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:508a:a8cb:c1b6:a6ef%eth2
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Doğrudan Sanal Bağdaştırıcısı:
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Teredo Tunneling Pseudo-Interface:
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2001:0:34af:cc99:2864:301f:3f50:4f46
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:2864:301f:3f50:4f46%net1
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2017-01-12 17:43:30.971+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface RAS Async Bağdaştırıcısı:
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64:
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #3:
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter:
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.56.1
+2017-01-12 17:43:30.972+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:89c6:ef55:6239:a50e%eth7
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #4:
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:3801%net7
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2:
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.99.1
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c8a5:f7f:3d71:eff1%eth8
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #5:
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:6301%net8
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3:
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.33.1
+2017-01-12 17:43:30.973+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c1e8:e077:93b5:ab07%eth9
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı:
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:2101%net9
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #2:
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:13d%net10
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #6:
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Bağdaştırıcısı:
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2002:c0af:b0b9:0:0:0:c0af:b0b9
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VPN Connection:
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.175.176.185
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #7:
+2017-01-12 17:43:30.974+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:200:5efe:c0af:b0b9%net13
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.975+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.976+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:30.977+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:30.977+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2017-01-12 17:43:32.405+0000 INFO  [o.n.b.v.r.Sessions] Bolt Server extension loaded.
+2017-01-12 17:43:32.413+0000 INFO  [o.n.b.v.r.Sessions] Bolt enabled on localhost:7687.
+2017-01-12 17:43:32.650+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV2_2[v0.A.5] record format from store C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:43:32.656+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_0[v0.A.7]' for existing store with format 'RecordFormat:StandardV2_2[v0.A.5]'
+2017-01-12 17:43:32.710+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2017-01-12 17:43:32.710+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2017-01-12 17:43:32.716+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Shutdown started
+2017-01-12 17:43:52.870+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2017-01-12 17:43:52.881+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2017-01-12 17:43:52.887+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2017-01-12 17:43:52.887+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2017-01-12 17:43:52.887+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.type=BOLT
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.tls_level=OPTIONAL
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.shell.enabled=true
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.type=HTTP
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.security.auth_store.location=data\dbms\auth
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.allow_format_migration=true
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2017-01-12 17:43:52.888+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 7.93 GB
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 3.85 GB
+2017-01-12 17:43:52.889+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 377.29 MB
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 15.93 GB
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 11.07 GB
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 97.83 MB
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 164.00 MB
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 1.76 GB
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2017-01-12 17:43:52.890+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2017-01-12 17:43:52.891+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=10.38 MB, used=10.01 MB, max=240.00 MB, threshold=0.00 B
+2017-01-12 17:43:52.891+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=28.13 MB, used=27.29 MB, max=-1.00 B, threshold=0.00 B
+2017-01-12 17:43:52.891+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=3.88 MB, used=3.69 MB, max=1.00 GB, threshold=0.00 B
+2017-01-12 17:43:52.892+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=54.00 MB, used=26.42 MB, max=666.50 MB, threshold=?
+2017-01-12 17:43:52.892+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=5.00 MB, used=5.00 MB, max=5.00 MB, threshold=?
+2017-01-12 17:43:52.892+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=105.00 MB, used=34.75 MB, max=1.32 GB, threshold=0.00 B
+2017-01-12 17:43:52.892+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2017-01-12 17:43:52.892+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 8
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 3340@chaosknight
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Istanbul
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.102-b14
+2017-01-12 17:43:52.893+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;;c:\program files\java\jre1.8.0_102\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/cldrdata.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/zipfs.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/jfxrt.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\charsets.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\resources.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jsse.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunec.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jfr.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/.install4j/i4jruntime.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/nashorn.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jce.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunmscapi.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunpkcs11.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/dnsns.jar
+2017-01-12 17:43:52.894+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\classes
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunjce_provider.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/neo4j-desktop-3.0.6.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-desktop-3.0.6.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\rt.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/jaccess.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/access-bridge-64.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/localedata.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\.install4j\i4jruntime.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\sunrsasign.jar
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Git\cmd
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\HashiCorp\Vagrant\bin
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Neo4j CE 3.0.6\bin
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_102\bin
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_102\bin
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = US
+2017-01-12 17:43:52.895+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 3.0.6\bin\
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 3.0.6\bin
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1254
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\chaosleader
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Istanbul
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1254
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = chaosleader
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = en
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 3.0.6\
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2017-01-12 17:43:52.896+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2017-01-12 17:43:53.049+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2017-01-12 17:43:53.049+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Çekirdek Hata Ayıklama Ağ Bağdaştırıcısı:
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR9285 Kablosuz Ağ Bağdaştırıcısı:
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30):
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.1.61
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c1dc:b2aa:30ca:145c%eth1
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Aygıtı (RFCOMM Protokolü TDI):
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Aygıtı (Kişisel Alan Ağı):
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:508a:a8cb:c1b6:a6ef%eth2
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Doğrudan Sanal Bağdaştırıcısı:
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Teredo Tunneling Pseudo-Interface:
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2001:0:34af:cc99:2864:301f:3f50:4f46
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:2864:301f:3f50:4f46%net1
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2017-01-12 17:43:53.050+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface RAS Async Bağdaştırıcısı:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #3:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.56.1
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:89c6:ef55:6239:a50e%eth7
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #4:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:3801%net7
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.99.1
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c8a5:f7f:3d71:eff1%eth8
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #5:
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:6301%net8
+2017-01-12 17:43:53.051+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.33.1
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c1e8:e077:93b5:ab07%eth9
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:2101%net9
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #2:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:13d%net10
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #6:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Bağdaştırıcısı:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2002:c0af:b0b9:0:0:0:c0af:b0b9
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VPN Connection:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.175.176.185
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #7:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:200:5efe:c0af:b0b9%net13
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.052+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.053+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.054+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:43:53.054+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2017-01-12 17:43:53.054+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2017-01-12 17:43:53.076+0000 INFO  [o.n.b.v.r.Sessions] Bolt Server extension loaded.
+2017-01-12 17:43:53.082+0000 INFO  [o.n.b.v.r.Sessions] Bolt enabled on localhost:7687.
+2017-01-12 17:43:53.098+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV2_2[v0.A.5] record format from store C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:43:53.104+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_0[v0.A.7]' for existing store with format 'RecordFormat:StandardV2_2[v0.A.5]'
+2017-01-12 17:43:53.126+0000 INFO  [o.n.k.i.s.p.StoreMigrator] Starting upgrade of database
+2017-01-12 17:43:53.144+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2017-01-12 17:43:53.144+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2017-01-12 17:43:53.150+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Shutdown started
+2017-01-12 17:48:32.922+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2017-01-12 17:48:32.931+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2017-01-12 17:48:32.937+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2017-01-12 17:48:32.937+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2017-01-12 17:48:32.937+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2017-01-12 17:48:32.937+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.type=BOLT
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.tls_level=OPTIONAL
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.shell.enabled=true
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.http.type=HTTP
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.security.auth_store.location=data\dbms\auth
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.allow_format_migration=true
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2017-01-12 17:48:32.938+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 7.93 GB
+2017-01-12 17:48:32.939+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 3.70 GB
+2017-01-12 17:48:32.939+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 454.30 MB
+2017-01-12 17:48:32.939+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 15.93 GB
+2017-01-12 17:48:32.939+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 10.83 GB
+2017-01-12 17:48:32.939+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2017-01-12 17:48:32.940+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 91.61 MB
+2017-01-12 17:48:32.940+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 175.00 MB
+2017-01-12 17:48:32.940+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 1.76 GB
+2017-01-12 17:48:32.941+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2017-01-12 17:48:32.941+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2017-01-12 17:48:32.941+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=11.06 MB, used=10.84 MB, max=240.00 MB, threshold=0.00 B
+2017-01-12 17:48:32.941+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=28.38 MB, used=27.52 MB, max=-1.00 B, threshold=0.00 B
+2017-01-12 17:48:32.941+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=3.88 MB, used=3.71 MB, max=1.00 GB, threshold=0.00 B
+2017-01-12 17:48:32.941+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=65.00 MB, used=41.90 MB, max=639.50 MB, threshold=?
+2017-01-12 17:48:32.942+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=5.00 MB, used=4.97 MB, max=5.00 MB, threshold=?
+2017-01-12 17:48:32.942+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=105.00 MB, used=36.51 MB, max=1.32 GB, threshold=0.00 B
+2017-01-12 17:48:32.942+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2017-01-12 17:48:32.942+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 8
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 3340@chaosknight
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Istanbul
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.102-b14
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;;c:\program files\java\jre1.8.0_102\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2017-01-12 17:48:32.943+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/cldrdata.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/zipfs.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/jfxrt.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\charsets.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\resources.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jsse.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunec.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jfr.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/.install4j/i4jruntime.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/nashorn.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\jce.jar
+2017-01-12 17:48:32.947+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunmscapi.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunpkcs11.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/dnsns.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\classes
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/sunjce_provider.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Program%20Files/Neo4j%20CE%203.0.6/bin/neo4j-desktop-3.0.6.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-desktop-3.0.6.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\rt.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/jaccess.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/access-bridge-64.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_102/lib/ext/localedata.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath] C:\Program Files\Neo4j CE 3.0.6\.install4j\i4jruntime.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_102\lib\sunrsasign.jar
+2017-01-12 17:48:32.948+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2017-01-12 17:48:32.949+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2017-01-12 17:48:32.949+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2017-01-12 17:48:32.949+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2017-01-12 17:48:32.949+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2017-01-12 17:48:32.950+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2017-01-12 17:48:32.950+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static
+2017-01-12 17:48:32.950+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Git\cmd
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\HashiCorp\Vagrant\bin
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Neo4j CE 3.0.6\bin
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_102\bin
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.moduleName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\c:_program_files_neo4j_ce_3.0.6_bin_neo4j-ce.exe
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = c:\program files\java\jre1.8.0_102\bin
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = US
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.exeDir = C:\Program Files\Neo4j CE 3.0.6\bin\
+2017-01-12 17:48:32.951+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Program Files\Neo4j CE 3.0.6\bin
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1254
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\chaosleader
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Istanbul
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1254
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = chaosleader
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.launchName = C:\Program Files\Neo4j CE 3.0.6\bin\neo4j-ce.exe
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = en
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] install4j.appDir = C:\Program Files\Neo4j CE 3.0.6\
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2017-01-12 17:48:32.952+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2017-01-12 17:48:33.099+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2017-01-12 17:48:33.099+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Çekirdek Hata Ayıklama Ağ Bağdaştırıcısı:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR9285 Kablosuz Ağ Bağdaştırıcısı:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.1.61
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c1dc:b2aa:30ca:145c%eth1
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Aygıtı (RFCOMM Protokolü TDI):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth Aygıtı (Kişisel Alan Ağı):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:508a:a8cb:c1b6:a6ef%eth2
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Doğrudan Sanal Bağdaştırıcısı:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Teredo Tunneling Pseudo-Interface:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2001:0:34af:cc99:2864:301f:3f50:4f46
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:2864:301f:3f50:4f46%net1
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface RAS Async Bağdaştırıcısı:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #3:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter:
+2017-01-12 17:48:33.100+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.56.1
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:89c6:ef55:6239:a50e%eth7
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #4:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:3801%net7
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.99.1
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c8a5:f7f:3d71:eff1%eth8
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #5:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:6301%net8
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.33.1
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c1e8:e077:93b5:ab07%eth9
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:2101%net9
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #2:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:5efe:c0a8:13d%net10
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #6:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Bağdaştırıcısı:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2002:c0af:b0b9:0:0:0:c0af:b0b9
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VPN Connection:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.175.176.185
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Bağdaştırıcısı #7:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:200:5efe:c0af:b0b9%net13
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.101+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface VirtualBox Host-Only Ethernet Adapter #3-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-VirtualBox NDIS Light-Weight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Qualcomm Atheros AR8131 PCI-E Gigabit Ethernet Denetleyicisi (NDIS 6.30)-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2017-01-12 17:48:33.102+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2017-01-12 17:48:33.125+0000 INFO  [o.n.b.v.r.Sessions] Bolt Server extension loaded.
+2017-01-12 17:48:33.136+0000 INFO  [o.n.b.v.r.Sessions] Bolt enabled on localhost:7687.
+2017-01-12 17:48:33.165+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV2_2[v0.A.5] record format from store C:\Users\chaosleader\Desktop\restapp.db
+2017-01-12 17:48:33.174+0000 INFO  [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_0[v0.A.7]' for existing store with format 'RecordFormat:StandardV2_2[v0.A.5]'
+2017-01-12 17:48:33.196+0000 INFO  [o.n.k.i.s.p.StoreMigrator] Starting upgrade of database
+2017-01-12 17:48:33.207+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2017-01-12 17:48:33.207+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2017-01-12 17:48:33.215+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Shutdown started

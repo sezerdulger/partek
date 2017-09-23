@@ -1,0 +1,301 @@
+
+<div xmlns:th="http://www.thymeleaf.org" ng-controller="UserIndexController" ng-init="init()">
+<h1 th:text="#{user_plural}"></h1>
+	
+	
+	<div layout="row">
+		
+			<div flex=""  ng-show="fields.id.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{user.search_id}"     class="form-control" for="id" ng-model="filter.id" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.role.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{user.search_role}"     class="form-control" for="role" ng-model="filter.role" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.fullname.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{user.search_fullname}"     class="form-control" for="fullname" ng-model="filter.fullname" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.username.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{user.search_username}"     class="form-control" for="username" ng-model="filter.username" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.password.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{user.search_password}"     class="form-control" for="password" ng-model="filter.password" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.active.visibility" class="border_right" >
+				<div layout="row">
+					<div layout="column">
+				      	<md-input-container  class="md-block" >
+							 <md-checkbox md-no-ink="" ng-change="index();" ng-model="filter.active" class="md-primary" th:text="#{User.active}">
+	            
+	          				</md-checkbox>
+						</md-input-container>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="filter.active=null;index();">delete</i>
+					</div>
+				</div>
+			</div>
+
+			<div flex=""   ng-show="fields.createdAt.visibility" class="border_right">
+				<div layout="row">
+					<div layout="column">
+						<div layout="flex">
+							<md-datepicker ng-model="filter.createdAt.min"   ></md-datepicker>
+						</div>
+						<div layout="flex">
+							<md-datepicker ng-model="filter.createdAt.max"   ></md-datepicker>
+						</div>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="index();">search</i>
+					</div>
+				</div>
+			</div>
+
+			<div flex=""  ng-show="fields.deleted.visibility" class="border_right" >
+				<div layout="row">
+					<div layout="column">
+				      	<md-input-container  class="md-block" >
+							 <md-checkbox md-no-ink="" ng-change="index();" ng-model="filter.deleted" class="md-primary" th:text="#{User.deleted}">
+	            
+	          				</md-checkbox>
+						</md-input-container>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="filter.deleted=null;index();">delete</i>
+					</div>
+				</div>
+			</div>
+
+		<div flex="" >
+			
+		</div>
+	</div>
+	
+	 
+	 
+	 <div layout="row">
+		
+				<div flex=""  ng-show="fields.id.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="id" th:text="#{user.id}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.role.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="role" th:text="#{user.role}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.fullname.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="fullname" th:text="#{user.fullname}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.username.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="username" th:text="#{user.username}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.password.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="password" th:text="#{user.password}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.active.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="active" th:text="#{user.active}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.createdAt.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="createdAt" th:text="#{user.createdAt}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.deleted.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="deleted" th:text="#{user.deleted}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+		<div flex="">
+			<i class="material-icons" ng-click="go('/user.json')">add
+				<md-tooltip md-direction="bottom">
+					<span th:text="#{str.new}"></span>
+				</md-tooltip>
+			</i>
+			<md-menu>
+				<md-button aria-label="fields menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
+		        	<i class="material-icons">assignment
+		        		<md-tooltip md-direction="bottom">
+					    	<span th:text="#{str.fields}"></span>
+					    </md-tooltip>
+		        	</i>
+		      	</md-button>
+		      	<md-menu-content width="4">
+			      	
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox user.id" ng-model="fields.id.visibility" th:text="#{user.id}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox user.role" ng-model="fields.role.visibility" th:text="#{user.role}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox user.fullname" ng-model="fields.fullname.visibility" th:text="#{user.fullname}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox user.username" ng-model="fields.username.visibility" th:text="#{user.username}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox user.password" ng-model="fields.password.visibility" th:text="#{user.password}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox user.active" ng-model="fields.active.visibility" th:text="#{user.active}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		      	</md-menu-content>
+			</md-menu>
+		</div>
+	</div>
+	 
+	<md-divider></md-divider>
+	
+	<md-divider></md-divider>
+	<br />
+	<md-list >
+		<md-list-item ng-repeat="user in userlist" class="restrow" ng-click="showUser($event, user)">
+			
+		<div flex=""  ng-show="fields.id.visibility" >
+			<span  >{{user.id}}</span>
+		</div>
+
+				<div flex="" ng-show="fields.role.visibility">
+					<a data-href="/role.json/{{user.role.id}}" 
+					class="rest user.role indexselect"
+					id="role"
+					ng-click="checkDeletedStatus($event, user.role.deleted);"
+					>
+					{{user.role.title}}
+					</a>
+				</div>
+
+		<div flex=""  ng-show="fields.fullname.visibility" >
+			<span  >{{user.fullname}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.username.visibility" >
+			<span  >{{user.username}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.password.visibility" >
+			<span  >{{user.password}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.active.visibility" >
+			<md-checkbox  layout="row" ng-model="user.active" th:text="#{user.active}" disabled="disabled">
+			</md-checkbox>
+		</div>
+
+					<div flex=""  ng-show="fields.createdAt.visibility">
+						<!-- <md-datepicker ng-model="user.createdAt" disabled="" ></md-datepicker>-->
+						<i  class="material-icons">today</i>
+						<span ng-model="user.createdAt" disabled="" >
+							{{user.createdAt | date:'dd-MM-yyyy'}}
+						</span>
+						
+					</div>
+
+		<div flex=""  ng-show="fields.deleted.visibility" >
+			<md-checkbox  layout="row" ng-model="user.deleted" th:text="#{user.deleted}" disabled="disabled">
+			</md-checkbox>
+		</div>
+
+			<div flex="">
+				<i class="material-icons" ng-click="removeUserConfirmation($event, user)">delete
+					<md-tooltip md-direction="bottom">
+						<span th:text="#{str.delete}"></span>
+					</md-tooltip>
+				</i>
+				<span th:replace="fragments/user :: indexactions">
+					  
+				</span>
+			</div>
+		</md-list-item>
+	</md-list>
+	<div layout="row">
+		<uib-pagination total-items="totalItems" ng-model="currentPage" class="pagination-sm" max-size="5"
+		  	previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" 
+		  	boundary-link-numbers="true" rotate="false">
+		</uib-pagination>
+	</div>
+	<span id="deleteConfirmation" th:text="#{str.deleteConfirmation}" ng-show="false"></span>
+	<span id="deleteConfirmationTitle" th:text="#{str.deleteConfirmationTitle}" ng-show="false"></span>
+	<span id="yes" th:text="#{str.yes}" ng-show="false"></span>
+	<span id="no" th:text="#{str.no}" ng-show="false"></span>
+	<span th:replace="fragments/serviceform :: indexending">
+					  
+	</span>
+</div>

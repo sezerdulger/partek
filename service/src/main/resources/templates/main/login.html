@@ -1,0 +1,98 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap-theme.min.css}" />
+	
+	<link rel="stylesheet" th:href="@{/css/angular/angular-material.min.css}" />
+	
+	
+	  <link rel="stylesheet" th:href="@{/css/selectize.css}" />
+	<!--<link rel="stylesheet" th:href="@{/css/select2.css}" />-->
+	
+	<link rel="stylesheet" th:href="@{/css/angular-modal/modal.css}" />
+	<link rel="stylesheet" th:href="@{/css/menu.css}" />
+	<link rel="stylesheet" th:href="@{/css/angular/icon.css}" />
+	
+	<script th:src="@{/js/jquery/jquery-2.2.0.min.js}" ></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	 -->
+	<script type="text/javascript" th:src="@{/js/angular/angular.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-route.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-resource.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-animate.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-aria.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-messages.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-cookies.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-material.min.js}"></script>
+		
+	<script type="text/javascript" th:src="@{/js/angular/angular-locale_tr-tr.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/angular-modal/modal.js}"></script>
+	<script type="text/javascript" th:src="@{/js/other/selectize.js}"></script> 
+	<script type="text/javascript" th:src="@{/js/other/angular-selectize.js}"></script>
+	<script type="text/javascript" th:src="@{/js/other/ng-selectize.js}"></script>
+	<!--<script type="text/javascript" th:src="@{/js/other/select2.full.js}"></script>-->
+	<script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/bootstrap/ui-bootstrap-tpls-1.1.2.js}"></script>
+	
+	
+	<script type="text/javascript" th:src="@{/js/angular/login.js}"></script>
+</head>
+<body class="container" ng-app="mainApp" > 
+	<div ng-controller="MainController" layout="column" layout-align="center center">
+		<div layout-gt-sm="row"  >
+			<md-divider></md-divider>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<div layout-gt-sm="row"  >
+			<img ng-src="/images/brand.png" />
+		</div>
+		<br/>
+		<br/>
+		<div layout-gt-sm="row"  >
+			<div class="alert alert-danger" ng-show="error" th:text="#{str.loginError}">
+					
+			</div>
+		</div>
+		<br/>
+		<div layout-gt-sm="row"  >
+			<form role="form" action="/login" method="POST">
+				<div layout-gt-sm="row"  >
+					<div flex="">
+						<label for="username" th:text="#{str.username}"></label>
+					</div>
+					<div flex="">
+						<input type="text" id="username" name="username" />
+					</div>
+				</div>
+				<br/>
+				<div layout-gt-sm="row"  >
+					<div flex="">
+						<label for="password" th:text="#{str.password}"></label>
+					</div>
+					<div flex="">
+						<input type="password" id="password" name="password" />
+					</div>
+				</div>
+				<br/>
+				<div layout-gt-sm="row">
+					<div flex="">
+					</div>
+					
+					<div flex="" >
+							<input type="submit" class="btn btn-primary" th:value="#{str.login}" />
+					</div>
+				</div>
+			</form>	
+		</div>
+	</div>
+</body >
+</html>

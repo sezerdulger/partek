@@ -1,0 +1,161 @@
+.menuBardemoBasicUsage .page-container {
+  background-color: #f1f1f1;
+  padding: 32px; }
+.menuBardemoBasicUsage .page {
+  margin: 0 auto;
+  background-color: white;
+  padding: 24px;
+  max-width: 680px;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25); }
+.menuBardemoBasicUsage .page h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 0;
+  font-weight: normal; }
+.menuBardemoBasicUsage .page p {
+  line-height: 1.6rem; }
+
+
+.large-Modal .modal-dialog{
+  width:400px; height: 400px;
+  position: absolute;
+  top:0; bottom: 0; left: 0; right: 0;
+  margin: auto
+  overflow-y:scroll;
+}
+
+/*body    {overflow-y:scroll;}*/
+
+ .modal-open .modal {
+ overflow-y:scroll;
+ }
+ .typeahead-demo .custom-popup-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #f9f9f9;
+  }
+  .md-padding {
+  padding-left: 0;
+  padding-top: 0;
+  }
+
+  .typeahead-demo .custom-popup-wrapper > .message {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    color: #868686;
+  }
+
+  .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+    position: static;
+    float: none;
+    display: block;
+    min-width: 160px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .md-chips .md-chip {
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  }
+  .md-chips {
+  padding-bottom: 2px;
+  }
+  /*.restrow:hover {
+  	background-color: #FCEAEA;
+  	cursor: pointer;
+  }*/
+  span.form-control {
+  	border: 0;
+  }
+  
+  .no-search .select2-search {
+    display:none
+}
+.restrow {
+	border-bottom: thin solid rgba(0,0,0,0.12);
+}
+
+.listdemoListControls {
+  /* Add some right padding so that the text doesn't overlap the buttons */ }
+  .listdemoListControls md-divider {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .listdemoListControls md-list-item > p,
+  .listdemoListControls md-list-item > .md-list-item-inner > p,
+  .listdemoListControls md-list-item .md-list-item-inner > p,
+  .listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */ }
+  .listdemoListControls .secondary-button-padding p {
+    padding-right: 100px; }
+    
+.restsearch {
+	background-color: #CE7070;
+}
+
+md-datepicker {
+	cursor: pointer;
+}
+.restlabel {
+	padding-left: 50%;
+}
+md-input-container label  {
+	color: #3A96B5;
+}
+
+// Match styling of md-datepicker with other inputs using md-no-float and icons: https://github.com/angular/material/issues/4233
+// TODO: The popup does not open from the correct location anymore
+// TODO: The popup 'input mask' element is transparent on the left and other input elements (including the icon) are visible in the background.
+md-datepicker {
+    padding-top: 3px;
+    > button.md-datepicker-button.md-icon-button.md-button {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        min-height: 30px;
+    }
+    > div.md-datepicker-input-container {
+        margin-left: 8px;
+        padding-bottom: 4px;
+    }
+    &.md-datepicker-open > div.md-datepicker-input-container > input.md-datepicker-input { // Stop the jumping on open
+        height: inherit;
+        margin-left: 20px;
+        // tabindex needs to be -1: https://github.com/angular/material/issues/4755
+    }
+}
+
+.border_right {
+	border-right: 1px solid;
+}
+/*
+.padding_top {
+	padding-top: 30px;
+	margin-right: 100px;
+}*/
+
+.myfocused{
+/*	color:rgba(0,0,0,0.54);
+	font-weight: 700;
+	font-size: 14px;
+	transition=transform cubic-bezier(.25,.8,.25,1) .25s;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    -webkit-font-smoothing: antialiased;	*/
+}
+.padding-left {
+	margin-left: 25%;
+}

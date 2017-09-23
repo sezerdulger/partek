@@ -1,0 +1,261 @@
+
+<div xmlns:th="http://www.thymeleaf.org" ng-controller="SettingsSelectController" ng-init="init()">
+<h1 th:text="#{settings_plural}"></h1>
+	
+	
+	<div layout="row">
+		
+			<div flex=""  ng-show="fields.id.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{settings.search_id}"     class="form-control" for="id" ng-model="filter.id" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.language.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						
+						<md-select ng-model="filter.language" ng-change="selectFilterChanged('language')">
+							<md-option value="optionclear" th:text="#{clearSelectSearch}"></md-option>
+							 	
+<md-option value="en" th:text="#{en}" ></md-option>
+
+<md-option value="tr" th:text="#{tr}" ></md-option>
+
+		        		</md-select>
+					</md-input-container>
+			</div>
+			
+		
+
+			<div flex=""  ng-show="fields.createdBy.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{settings.search_createdBy}"     class="form-control" for="createdBy" ng-model="filter.createdBy" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.owner.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{settings.search_owner}"     class="form-control" for="owner" ng-model="filter.owner" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""  ng-show="fields.updatedBy.visibility" class="border_right" >
+			      	<md-input-container  class="md-block" >
+						<input th:attr="placeholder=#{settings.search_updatedBy}"     class="form-control" for="updatedBy" ng-model="filter.updatedBy" ng-keyup="$event.keyCode == 13 ? index() : ''" />
+					</md-input-container>
+			</div>
+
+			<div flex=""   ng-show="fields.createdAt.visibility" class="border_right">
+				<div layout="row">
+					<div layout="column">
+						<div layout="flex">
+							<md-datepicker ng-model="filter.createdAt.min"   ></md-datepicker>
+						</div>
+						<div layout="flex">
+							<md-datepicker ng-model="filter.createdAt.max"   ></md-datepicker>
+						</div>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="index();">search</i>
+					</div>
+				</div>
+			</div>
+
+			<div flex=""   ng-show="fields.updatedAt.visibility" class="border_right">
+				<div layout="row">
+					<div layout="column">
+						<div layout="flex">
+							<md-datepicker ng-model="filter.updatedAt.min"   ></md-datepicker>
+						</div>
+						<div layout="flex">
+							<md-datepicker ng-model="filter.updatedAt.max"   ></md-datepicker>
+						</div>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="index();">search</i>
+					</div>
+				</div>
+			</div>
+
+			<div flex=""  ng-show="fields.deleted.visibility" class="border_right" >
+				<div layout="row">
+					<div layout="column">
+				      	<md-input-container  class="md-block" >
+							 <md-checkbox md-no-ink="" ng-change="index();" ng-model="filter.deleted" class="md-primary" th:text="#{Settings.deleted}">
+	            
+	          				</md-checkbox>
+						</md-input-container>
+					</div>
+					<div layout="column" layout-align="end end">
+						<i class="material-icons" ng-click="filter.deleted=null;index();">delete</i>
+					</div>
+				</div>
+			</div>
+
+		<div flex="" >
+			
+		</div>
+	</div>
+	
+	 
+	 
+	 <div layout="row">
+		
+				<div flex=""  ng-show="fields.id.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="id" th:text="#{settings.id}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.language.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="language" th:text="#{settings.language}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.createdBy.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="createdBy" th:text="#{settings.createdBy}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.owner.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="owner" th:text="#{settings.owner}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.updatedBy.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="updatedBy" th:text="#{settings.updatedBy}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.createdAt.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="createdAt" th:text="#{settings.createdAt}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.updatedAt.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="updatedAt" th:text="#{settings.updatedAt}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+				<div flex=""  ng-show="fields.deleted.visibility" class="border_right">
+				      	<md-input-container  class="md-block" >
+						<label  class="form-control-label padding-left" for="deleted" th:text="#{settings.deleted}">
+						</label> <!--  style="padding-left: 30%" -->
+					</md-input-container>
+				</div>
+
+		<div flex="">
+			
+			<md-menu>
+				<md-button aria-label="fields menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
+		        	<i class="material-icons">assignment
+		        		<md-tooltip md-direction="bottom">
+					    	<span th:text="#{str.fields}"></span>
+					    </md-tooltip>
+		        	</i>
+		      	</md-button>
+		      	<md-menu-content width="4">
+			      	
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox settings.id" ng-model="fields.id.visibility" th:text="#{settings.id}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		        <md-menu-item>
+		        	<md-button  md-prevent-menu-close="md-prevent-menu-close">
+			        	<md-checkbox layout="row" aria-label="Checkbox settings.language" ng-model="fields.language.visibility" th:text="#{settings.language}">
+			        	</md-checkbox>
+		          	</md-button>
+		        </md-menu-item>
+		        
+		        <md-menu-divider></md-menu-divider>
+
+		      	</md-menu-content>
+			</md-menu>
+		</div>
+	</div>
+	 
+	<md-divider></md-divider>
+	
+	<md-divider></md-divider>
+	<br />
+	<md-list >
+		<md-list-item ng-repeat="settings in settingslist" class="restrow" >
+			
+		<div flex=""  ng-show="fields.id.visibility" >
+			<span  >{{settings.id}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.language.visibility" >
+			<span  >{{settings.translatedlanguage}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.createdBy.visibility" >
+			<span  >{{settings.createdBy}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.owner.visibility" >
+			<span  >{{settings.owner}}</span>
+		</div>
+
+		<div flex=""  ng-show="fields.updatedBy.visibility" >
+			<span  >{{settings.updatedBy}}</span>
+		</div>
+
+					<div flex=""  ng-show="fields.createdAt.visibility">
+						<!-- <md-datepicker ng-model="settings.createdAt" disabled="" ></md-datepicker>-->
+						<i  class="material-icons">today</i>
+						<span ng-model="settings.createdAt" disabled="" >
+							{{settings.createdAt | date:'dd-MM-yyyy'}}
+						</span>
+						
+					</div>
+
+					<div flex=""  ng-show="fields.updatedAt.visibility">
+						<!-- <md-datepicker ng-model="settings.updatedAt" disabled="" ></md-datepicker>-->
+						<i  class="material-icons">today</i>
+						<span ng-model="settings.updatedAt" disabled="" >
+							{{settings.updatedAt | date:'dd-MM-yyyy'}}
+						</span>
+						
+					</div>
+
+		<div flex=""  ng-show="fields.deleted.visibility" >
+			<md-checkbox  layout="row" ng-model="settings.deleted" th:text="#{settings.deleted}" disabled="disabled">
+			</md-checkbox>
+		</div>
+
+			<div flex="">
+				<button type="button" class="btn btn-primary" ng-click="selectRelation(settings)" th:text="#{str.select}"></button>
+
+			</div>
+		</md-list-item>
+	</md-list>
+	<div layout="row">
+		<uib-pagination total-items="totalItems" ng-model="currentPage" class="pagination-sm" max-size="5"
+		  	previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" 
+		  	boundary-link-numbers="true" rotate="false">
+		</uib-pagination>
+	</div>
+	<span id="deleteConfirmation" th:text="#{str.deleteConfirmation}" ng-show="false"></span>
+	<span id="deleteConfirmationTitle" th:text="#{str.deleteConfirmationTitle}" ng-show="false"></span>
+	<span id="yes" th:text="#{str.yes}" ng-show="false"></span>
+	<span id="no" th:text="#{str.no}" ng-show="false"></span>
+</div>

@@ -1,0 +1,58 @@
+<div xmlns:th="http://www.thymeleaf.org" class="container-fluid">
+<h1>Service Forms</h1>
+	<table class="resttable display tablesorter" cellspacing="0" width="100%" >
+		<thead>
+			<tr>
+				<th>
+					<label class="form-control-label" for="id" th:text="#{serviceform.id}" >
+					
+					</label>
+				</th>
+				<th>
+					<label for="customer" th:text="#{serviceform.customer}" >
+					
+					</label>
+				</th>
+				
+				<th>
+					<label for="comment" th:text="#{serviceform.comment}" >
+					
+					</label>
+				</th>
+				
+				<th class="labelsave sorter-false filter-false">
+				</th>
+			</tr>
+		</thead>
+	
+	<tbody>
+		<tr th:each="serviceform : ${serviceformlist}" th:attr="data-id=${serviceform.id}">
+			
+				<td>
+					<span class="form-control serviceform.id" id="id" th:text="${serviceform.id}">
+					
+					</span>
+				</td>
+				<td>
+					<a th:href="@{/customer/{id}(id=${serviceform.customer.id})}" 
+					th:text="${serviceform.customer.title}"
+					class="rest serviceform.customer"
+					id="customer"
+					th:attr="data-id=${serviceform.customer.id}"
+					data-newdialog="true"
+					>
+					</a>
+				</td>
+				<td>
+					<input type="text" class="form-control serviceform.comment" id="comment" th:value="${serviceform.comment}" />
+				</td>
+				<td>
+					<form th:action="@{/serviceform.json}" class="form-inline serviceform" role="form" th:attr="data-id=${serviceform.id}">
+						<button type="submit" class="btn btn-primary" th:text="#{str.save}" ></button>
+					</form>
+				</td>
+			
+		</tr>
+	</tbody>
+</table>
+</div>

@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+	<title>Partek</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+	<!-- Latest compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+	-->
+	<!-- Optional theme -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous" />
+	-->
+	<link rel="stylesheet" th:href="@{/css/angular/angular-material.min.css}" />
+	
+	
+	  <link rel="stylesheet" th:href="@{/css/selectize.css}" />
+	<!--<link rel="stylesheet" th:href="@{/css/select2.css}" />-->
+	<link rel="stylesheet" th:href="@{/css/menu.css}" />
+	<link rel="stylesheet" th:href="@{/css/angular-modal/dialog.css}" />
+	<link rel="stylesheet" th:href="@{/css/modal.css}" />
+	<link rel="stylesheet" th:href="@{/css/angular/icon.css}" />
+	
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js" ></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	 -->
+	<script type="text/javascript" th:src="@{/js/angular/angular.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-route.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-resource.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-animate.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-aria.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-messages.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-cookies.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/angular-material.min.js}"></script>
+		
+	<script type="text/javascript" th:src="@{/js/angular/angular-locale_tr-tr.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/angular-modal/modal.js}"></script>
+	<script type="text/javascript" th:src="@{/js/other/selectize.js}"></script> 
+	<script type="text/javascript" th:src="@{/js/other/angular-selectize.js}"></script>
+	<script type="text/javascript" th:src="@{/js/other/ng-selectize.js}"></script>
+	<!--<script type="text/javascript" th:src="@{/js/other/select2.full.js}"></script>-->
+	
+	<script type="text/javascript" th:src="@{/js/angular/rest/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/serviceform/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/serviceform/controllers.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/serviceform/filters.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/serviceform/services.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/rest/customer/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/customer/controllers.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/customer/filters.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/customer/services.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/rest/role/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/role/controllers.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/role/filters.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/role/services.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/rest/modelright/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/modelright/controllers.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/modelright/filters.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/modelright/services.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/rest/user/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/user/controllers.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/user/filters.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/user/services.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/angular/rest/settings/apps.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/settings/controllers.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/settings/filters.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/settings/services.js}"></script>
+	<script type="text/javascript" th:src="@{/js/angular/rest/settings/interceptors.js}"></script>
+
+
+</head>
+<body ng-app="mainApp" class="container-fluid">
+	<div ng-controller="MainController as main">
+		<div ng-controller="DemoBasicCtrl as ctrl" ng-cloak="" >
+			<md-toolbar>
+				<div class="md-toolbar-tools">
+					<md-button class="md-icon-button" aria-label="Settings">
+						
+						
+					</md-button>
+					 
+					
+					<h2>
+						<span>
+							<h2 class="md-toolbar-tools" th:text="#{str.pageTitle}">
+							</h2>
+						</span>
+					</h2>
+					<span flex=""></span>
+					<md-menu md-position-mode="target target">
+						<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu()"> 
+							<i class="material-icons" >more_vert
+							</i>
+						</md-button>
+						<md-menu-content width="3" >
+						
+							<md-menu-item>
+							
+				          		<md-button ng-href="#/settings.json/{{userdetails.settings.id}}">
+				            		<span th:text="#{str.settings}"></span>
+			          			</md-button>
+			        		</md-menu-item>
+						
+				        	<md-menu-item>
+				          		<md-button ng-href="/logout">
+				            		<span th:text="#{str.logout}"></span>
+			          			</md-button>
+			        		</md-menu-item>
+			        		
+			        	</md-menu-content>
+					</md-menu>
+				</div>
+			</md-toolbar>
+	
+			<md-toolbar class="md-menu-toolbar">
+				<div layout="row">
+					<md-toolbar-filler> 
+							<img ng-src="images/logo.png" width="100%" height="100%" />
+					</md-toolbar-filler>
+					<div>
+						<md-menu-bar> 
+							<md-menu>
+								<button ng-click="$mdOpenMenu()">
+									<span th:text="#{str.file}"></span>
+								</button>
+								<md-menu-content> 
+									<md-menu-item>
+										<md-menu>
+											<md-button ng-click="$mdOpenMenu()">
+												<span th:text="#{serviceform}"></span>
+											</md-button>
+											<md-menu-content>
+												<md-menu-item>
+													<md-button ng-href="#/serviceform.json" th:text="#{str.new}">
+													</md-button>
+												</md-menu-item>
+												<md-menu-item>
+													<md-button ng-href="#/serviceform.json/page/1/limit/10/query/none" th:text="#{str.index}">
+													</md-button>
+												</md-menu-item>
+											</md-menu-content>
+										</md-menu>
+									</md-menu-item>
+									<md-menu-divider>
+									
+									</md-menu-divider> 
+									<md-menu-item>
+										<md-menu>
+											<md-button ng-click="$mdOpenMenu()">
+												<span th:text="#{customer}"></span>
+											</md-button>
+											<md-menu-content>
+												<md-menu-item>
+													<md-button ng-href="#/customer.json" th:text="#{str.new}">
+													</md-button>
+												</md-menu-item>
+												<md-menu-item>
+													<md-button ng-href="#/customer.json/page/1/limit/10/query/none" th:text="#{str.index}">
+													</md-button>
+												</md-menu-item>
+											</md-menu-content>
+										</md-menu>
+									</md-menu-item>
+									
+									<md-menu-divider>
+									</md-menu-divider>
+									
+									<md-menu-item ng-if="isAdmin">
+										<md-menu>
+											<md-button ng-click="$mdOpenMenu()">
+												<span th:text="#{role}"></span>
+											</md-button>
+											<md-menu-content>
+												<md-menu-item>
+													<md-button ng-href="#/role.json" th:text="#{str.new}">
+													</md-button>
+												</md-menu-item>
+												<md-menu-item>
+													<md-button ng-href="#/role.json/page/1/limit/10/query/none" th:text="#{str.index}">
+													</md-button>
+												</md-menu-item>
+											</md-menu-content>
+										</md-menu>
+									</md-menu-item>
+									
+									<md-menu-divider ng-if="isAdmin">
+									</md-menu-divider>
+									
+									<md-menu-item ng-if="isAdmin">
+										<md-menu>
+											<md-button ng-click="$mdOpenMenu()">
+												<span th:text="#{modelright}"></span>
+											</md-button>
+											<md-menu-content>
+												<md-menu-item>
+													<md-button ng-href="#/modelright.json" th:text="#{str.new}">
+													</md-button>
+												</md-menu-item>
+												<md-menu-item>
+													<md-button ng-href="#/modelright.json/page/1/limit/10/query/none" th:text="#{str.index}">
+													</md-button>
+												</md-menu-item>
+											</md-menu-content>
+										</md-menu>
+									</md-menu-item>
+									
+									<md-menu-divider ng-if="isAdmin">
+									</md-menu-divider>
+									 
+									 <md-menu-item ng-if="isAdmin">
+										<md-menu>
+											<md-button ng-click="$mdOpenMenu()">
+												<span th:text="#{user}"></span>
+											</md-button>
+											<md-menu-content>
+												<md-menu-item>
+													<md-button ng-href="#/user.json" th:text="#{str.new}">
+													</md-button>
+												</md-menu-item>
+												<md-menu-item>
+													<md-button ng-href="#/user.json/page/1/limit/10/query/none" th:text="#{str.index}">
+													</md-button>
+												</md-menu-item>
+											</md-menu-content>
+										</md-menu>
+									</md-menu-item>
+									
+									<md-menu-divider ng-if="isAdmin">
+									</md-menu-divider>
+									
+									
+									
+								</md-menu-content> 
+							</md-menu> 
+							<md-menu>
+								<button ng-href="/about">
+									<span th:text="#{str.about}"></span>
+								</button>
+								
+							</md-menu> 
+						</md-menu-bar>
+					</div>
+				</div>
+			</md-toolbar>
+		</div>
+	
+		<!-- <div ng-include="template"> </div>-->
+		<!-- <div compile="container"></div> -->
+		<div ng-view=""> </div>
+			
+	</div>
+	
+	<div id="largeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<p>One fine body&hellip;</p>
+					<div ng-include="dialogTemplate"></div>
+				</div>
+				<div class="modal-footer">
+				<!--  
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       				<button type="button" class="btn btn-primary" ng-click="save();">Save changes</button>
+       			-->
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+</body>
+</html>

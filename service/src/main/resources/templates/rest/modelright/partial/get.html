@@ -1,0 +1,143 @@
+
+<div ng-controller="ModelRightGetController" layout="column" ng-cloak="" class="md-inline-form" ng-init="init()">
+	<md-content layout-padding="">
+	    <div>
+	    	<form name="modelright">
+		        
+				<div layout-gt-sm="row"  ng-if="true">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="true" >
+			            <label th:text="#{modelright.id}"  ng-if="true" ></label>
+			            <input  ng-model="modelright.id" disabled="disabled"  ng-if="true" />
+		          	</md-input-container>
+		        </div>
+
+ 				<div layout-gt-sm="row"  ng-if="true" >
+		        	<md-input-container class="md-block md-input-has-value" flex-gt-sm=""  ng-if="true" >
+		        		 <label th:text="#{modelright.role}"  ng-if="true"></label>
+					     <md-content class="md-padding" layout="column"  ng-if="true">
+						    <md-chips readonly="readonly"   >
+						        <md-chip >
+						        	<input style="display: none;" value="{{modelright.role.id}}" ng-if="true" />
+						        	<a  ng-if="true">{{modelright.role.title}}</a>
+						        	
+						        </md-chip>
+						        
+						    </md-chips>
+						 </md-content>
+				    </md-input-container>
+				    
+				    <md-input-container class="md-block relation" flex-gt-sm=""  ng-if="true" >
+				    <div layout="row" ng-if="true">
+					    	<i ng-if="true"  class="material-icons" ng-click="deleterole($event, modelright)">delete</i>
+					    	<i ng-if="true"  class="material-icons" ng-click="showroleList($event, modelright)" data-template="/role/select">edit</i>
+				    	</div>
+				    </md-input-container>
+				</div>
+
+ 	<div layout-gt-sm="row"  ng-if="true" >
+	 	<md-input-container style="margin-right: 10px;" ng-if="true">
+	        <label th:text="#{modelright.model}" ng-if="true"></label>
+	        <md-select ng-model="modelright.model" ng-if="true">
+	          
+<md-option value="serviceform" th:text="#{serviceform}" ></md-option>
+
+<md-option value="customer" th:text="#{customer}" ></md-option>
+
+<md-option value="user" th:text="#{user}" ></md-option>
+
+	        </md-select>
+	     </md-input-container>
+     </div>
+
+		  <div layout-gt-sm="row"  ng-if="true" >
+		  <md-checkbox md-no-ink="" ng-if="true" ng-model="modelright.read" class="md-primary" th:text="#{modelright.read}">
+            
+          </md-checkbox>
+          </div>
+
+		  <div layout-gt-sm="row"  ng-if="true" >
+		  <md-checkbox md-no-ink="" ng-if="true" ng-model="modelright.create" class="md-primary" th:text="#{modelright.create}">
+            
+          </md-checkbox>
+          </div>
+
+		  <div layout-gt-sm="row"  ng-if="true" >
+		  <md-checkbox md-no-ink="" ng-if="true" ng-model="modelright.edit" class="md-primary" th:text="#{modelright.edit}">
+            
+          </md-checkbox>
+          </div>
+
+		  <div layout-gt-sm="row"  ng-if="true" >
+		  <md-checkbox md-no-ink="" ng-if="true" ng-model="modelright.delete" class="md-primary" th:text="#{modelright.delete}">
+            
+          </md-checkbox>
+          </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{modelright.createdBy}"  ng-if="false" ></label>
+			            <input  ng-model="modelright.createdBy"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{modelright.owner}"  ng-if="false" ></label>
+			            <input  ng-model="modelright.owner"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false">
+		        	<md-input-container class="md-block" flex-gt-xs=""  ng-if="false" >
+			            <label th:text="#{modelright.updatedBy}"  ng-if="false" ></label>
+			            <input  ng-model="modelright.updatedBy"   ng-if="false" />
+		          	</md-input-container>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false" >
+					<div layout="column" ng-if="false">
+						<div flex="" ng-if="false">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="false" >
+								<label th:text="#{modelright.createdAt}" ng-if="false"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="false">
+							<md-datepicker ng-if="false" ng-model="modelright.createdAt"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+				<div layout-gt-sm="row"  ng-if="false" >
+					<div layout="column" ng-if="false">
+						<div flex="" ng-if="false">
+							<md-input-container class="md-block md-input-has-value" flex-gt-xs=""  ng-if="false" >
+								<label th:text="#{modelright.updatedAt}" ng-if="false"  class="myfocused"></label>
+							</md-input-container>
+						</div>
+						<div flex="" ng-if="false">
+							<md-datepicker ng-if="false" ng-model="modelright.updatedAt"></md-datepicker>
+						</div>
+					</div>
+		        </div>
+
+		  <div layout-gt-sm="row"  ng-if="false" >
+		  <md-checkbox md-no-ink="" ng-if="false" ng-model="modelright.deleted" class="md-primary" th:text="#{modelright.deleted}">
+            
+          </md-checkbox>
+          </div>
+
+				
+		        <div layout-gt-sm="row">
+					<div class="col-sm-offset-8 col-sm-1">
+						<button type="button" ng-click="save();" class="btn btn-primary" th:text="#{str.save}"></button>
+					</div>
+					<div class="col-sm-1">
+						<span th:replace="fragments/modelright :: getactions">
+					  
+						</span>
+					</div>
+				</div>
+	      </form>
+	    </div>
+  </md-content>
+</div>
